@@ -17,30 +17,6 @@ class DB_Functions {
     function __destruct() {
     }
 
-    /*public function storeUser($User) {
-        $result = mysql_query("INSERT INTO user(Name) VALUES('$User')");		
-        if ($result) {
-			return true;
-        } else {
-			return false;
-		}
-    }
-
-    public function getAllUsers() {
-        $result = mysql_query("select * FROM user");
-        return $result;
-    }
-
-    public function getUnSyncRowCount() {
-        $result = mysql_query("SELECT * FROM user WHERE syncsts = FALSE");
-        return $result;
-    }
-	
-	public function updateSyncSts($id, $sts){
-		$result = mysql_query("UPDATE user SET syncsts = $sts WHERE Id = $id");
-		return $result;
-	}*/
-
 
     public function findUserByUsername($username) {
         $username = mysqli_real_escape_string($this->con, $username);
@@ -87,14 +63,21 @@ class DB_Functions {
 
     public function getVaccines($childid) {
         $childid = mysqli_real_escape_string($this->con, $childid);
-        $result = mysqli_query($this->con, "SELECT * FROM vaccines ORDER BY vaccid ASC");
+        $result = mysqli_query($this->con, "SELECT * FROM vaccines ORDER BY months ASC");
+        return $result;
+    }
+
+
+    public function getUserVaccines($childid) {
+        $childid = mysqli_real_escape_string($this->con, $childid);
+        $result = mysqli_query($this->con, "SELECT * FROM vaccines WHERE months > '200' ORDER BY months ASC");
         return $result;
     }
 
 
     public function getPetVaccines($pet) {
         $pet = mysqli_real_escape_string($this->con, $pet);
-        $result = mysqli_query($this->con, "SELECT * FROM petvaccines WHERE pet = '$pet' ORDER BY petvaccid ASC");
+        $result = mysqli_query($this->con, "SELECT * FROM petvaccines WHERE pet = '$pet' ORDER BY months ASC");
         return $result;
     }
 
@@ -179,35 +162,6 @@ class DB_Functions {
         return $result;
     }
 
-
-
- /*   public function newUserData($name, $isd, $phone, $email, $dob, $city) {
-        $name = mysql_real_escape_string($name);
-        $phone = mysql_real_escape_string($phone);
-        $email = mysql_real_escape_string($email);
-        $dob = mysql_real_escape_string($dob);
-        $city = mysql_real_escape_string($city);
-
-        $time = time();
-        $token = $time;
-        $result = mysql_query("UPDATE users SET name='$name', email='$email', dob='$dob', city='$city', token='$token' WHERE phone='$phone'");
-        if($result) {
-            $resultb = mysql_query("SELECT id FROM users WHERE phone='$phone' LIMIT 1");
-            if($resultb) {
-                $no = mysql_num_rows($resultb);
-                if($no) {
-                    $user = mysql_fetch_array($resultb);
-                    $a = array();
-                    $a["status"] = "Success";
-                    $a["uid"] = $user["id"];
-                    $a["utoken"] = $token;
-                    $a["time"] = $time;
-                    return $a;
-                }
-            }
-        }
-    }
-*/
 }
- 
+
 ?>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2017 at 07:32 AM
+-- Generation Time: Feb 11, 2017 at 09:45 AM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 7.0.13
 
@@ -45,7 +45,12 @@ INSERT INTO `children` (`childid`, `id`, `childname`, `sex`, `dob`) VALUES
 (14, 1, 'Shalini', 'f', '1999-01-09'),
 (15, 1, 'Rahul', 'f', '1998-02-05'),
 (16, 1, 'Ila', 'f', '2015-06-03'),
-(17, 11, 'Jack', 'm', '2005-02-12');
+(17, 11, 'Jack', 'm', '2005-02-12'),
+(18, 1, 'Ajssjjd', 'm', '2017-02-19'),
+(19, 1, 'Were', 'm', '2016-12-04'),
+(20, 1, 'Akku', 'f', '2017-01-18'),
+(21, 1, 'Annu', 'f', '2017-02-15'),
+(22, 1, 'Andbvd', 'm', '2017-02-13');
 
 -- --------------------------------------------------------
 
@@ -67,7 +72,11 @@ CREATE TABLE `pets` (
 
 INSERT INTO `pets` (`petid`, `id`, `petname`, `pet`, `dob`) VALUES
 (1, 4, 'Brat', 'd', '2005-02-12'),
-(2, 11, 'Bruno', 'd', '2005-02-12');
+(2, 11, 'Bruno', 'd', '2005-02-12'),
+(3, 1, 'Lily', 'c', '1999-02-13'),
+(4, 1, 'Likkk', 'd', '2017-02-05'),
+(5, 1, 'Doggy', 'd', '2017-01-15'),
+(6, 1, 'Catt', 'c', '2017-02-13');
 
 -- --------------------------------------------------------
 
@@ -172,7 +181,15 @@ INSERT INTO `vaccines` (`vaccid`, `vaccname`, `months`) VALUES
 (15, 'Diphtheria Dose 5', 18),
 (16, 'Diphtheria Dose 6', 48),
 (17, 'Mumps Dose 2', 48),
-(18, 'Polio Dose 4', 60);
+(18, 'Polio Dose 4', 60),
+(19, 'Influenza', 230),
+(20, 'TDAP', 264),
+(21, 'MMR', 348),
+(22, 'VAR', 368),
+(23, 'HZV', 720),
+(24, 'HPV', 210),
+(25, 'PCV 13', 780),
+(26, 'PPSV 23', 812);
 
 --
 -- Indexes for dumped tables
@@ -216,12 +233,12 @@ ALTER TABLE `vaccines`
 -- AUTO_INCREMENT for table `children`
 --
 ALTER TABLE `children`
-  MODIFY `childid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `childid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `pets`
 --
 ALTER TABLE `pets`
-  MODIFY `petid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `petid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `petvaccines`
 --
@@ -236,7 +253,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `vaccines`
 --
 ALTER TABLE `vaccines`
-  MODIFY `vaccid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `vaccid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

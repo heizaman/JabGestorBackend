@@ -16,7 +16,7 @@
 	$pet = $pets["pet"];
 
 	$year = date('Y', strtotime($dob));
-	$month = date('F', strtotime($dob));
+	$month = date('m', strtotime($dob));
 	
 	$allvaccines = $db->getPetVaccines($pet);
 
@@ -25,12 +25,12 @@
         $months = $row["months"];
 
         if(($month+$months)>12) {
-        	$duemonth = floor(($month+$months)/12);
-        	$dueyear = floor($year+(($month+$months)%12));
+        	$duemonth = floor(($month+$months)%12);
+        	$dueyear = floor($year+(($month+$months)/12));
         }
         else {
         	$duemonth = floor(($month+$months));
-        	$dueyear = floor($year+(($month+$months)));
+        	$dueyear = floor($year);
         }
         
         if($duemonth<10) {
