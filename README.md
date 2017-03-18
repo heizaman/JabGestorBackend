@@ -23,7 +23,7 @@ Application to manage the immunization schedule of users and their family member
     Created database architecture storing user login details and their family members’ data.
 
 
-    Created a fully working android UI for login and registration of user. Also added an option for adding children and pets. 
+    Developed a fully working android UI for login and registration of user. Also added an option for adding children and pets. 
 
 
     Developed REST APIs for seamless integration with android app.
