@@ -15,7 +15,6 @@ Application to manage the immunization schedule of users and their family member
 
 
 #
-DONE
 
 
     Created a database containing vaccines for humans and for pets stored along with their due months after birth. 
@@ -30,17 +29,9 @@ DONE
     Developed REST APIs for seamless integration with android app.
 
 
- 
-
-
-#
-TO BE DONE
-
-
-    Improvement of android UI. 
-
 
  
+
 
 
 #
