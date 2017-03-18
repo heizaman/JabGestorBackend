@@ -7,14 +7,14 @@ Team: JARVIS
 DTU | NEW DELHI
 
 
+#
 Application to manage the immunization schedule of users and their family members including pets, showing due date for each vaccine. Users can see the full schedule to know which vaccine is due in which month so that they never miss an immunization.
 
 
- 
 
 
 
-
+#
 DONE
 
 
@@ -33,8 +33,7 @@ DONE
  
 
 
-
-
+#
 TO BE DONE
 
 
@@ -44,8 +43,7 @@ TO BE DONE
  
 
 
-
-
+#
 LINKS TO GIT REPOSITORIES
 
 
