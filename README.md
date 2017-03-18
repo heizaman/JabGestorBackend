@@ -8,9 +8,6 @@ DTU | NEW DELHI
 
 
 Application to manage the immunization schedule of users and their family members including pets, showing due date for each vaccine. Users can see the full schedule to know which vaccine is due in which month so that they never miss an immunization.
-Created database architecture storing
-user login details and their family members’ data. Developed REST APIs for seamless
-integration with android app.
 
 
  
@@ -18,7 +15,7 @@ integration with android app.
 
 
 
-Things Done 
+DONE
 
 
     Created a database containing vaccines for humans and for pets stored along with their due months after birth. 
@@ -38,10 +35,10 @@ Things Done
 
 
 
-Things To Be Done 
+TO BE DONE
 
 
-    Improving android UI and fixing bugs (if any). 
+    Improvement of android UI. 
 
 
  
@@ -49,7 +46,7 @@ Things To Be Done
 
 
 
-Links to GIT Repositories 
+LINKS TO GIT REPOSITORIES
 
 
 FrontEnd (Android) - https://github.com/rizal-rovins/androidsignin 
