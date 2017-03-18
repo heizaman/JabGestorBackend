@@ -7,10 +7,10 @@ Team: JARVIS
 DTU | NEW DELHI
 
 
-Objective 
-
-
-To create a user-friendly android app for users to manage the immunization schedule of themselves and their family including children and pets. They can see the full schedule to see which vaccine is due in which month so that they never miss an immunization. 
+Application to manage the immunization schedule of users and their family members including pets, showing due date for each vaccine. Users can see the full schedule to know which vaccine is due in which month so that they never miss an immunization.
+Created database architecture storing
+user login details and their family members’ data. Developed REST APIs for seamless
+integration with android app.
 
 
  
@@ -22,13 +22,13 @@ Things Done
     Created a database containing vaccines for humans and for pets stored along with their due months after birth. 
 
 
-    Created a database containing user details along with details of children and pets. 
+    Created database architecture storing user login details and their family members’ data.
 
 
     Created a fully working android UI for login and registration of user. Also added an option for adding children and pets. 
 
 
-    Interlinked the databases to calculate the due date of vaccine for each member of family and then Showed it in android UI in a comfortably accessible manner. 
+    Developed REST APIs for seamless integration with android app.
 
 
  
@@ -38,9 +38,6 @@ Things To Be Done
 
 
     Improving android UI and fixing bugs (if any). 
-
-
- 
 
 
  
