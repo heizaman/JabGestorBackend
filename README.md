@@ -41,7 +41,7 @@ LINKS TO GIT REPOSITORIES
 FrontEnd (Android) - https://github.com/rizal-rovins/androidsignin 
 
 
-BackEnd - https://github.com/msgmeaman/hackDTU 
+BackEnd - https://github.com/msgmeaman/JabGestorBackend 
 
 
  
